@@ -1,7 +1,7 @@
 /*加载js文件*/
 var excute = function(){
     var script = document.createElement("script");
-    script.src = "./code/demo.js";
+    script.src = "./code/BigIntAdd.js";
     document.body.appendChild(script);
 }
 
