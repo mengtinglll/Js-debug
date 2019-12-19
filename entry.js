@@ -1,7 +1,7 @@
 /*加载js文件*/
 var excute = function(){
     var script = document.createElement("script");
-    script.src = "./code/m18(2)-DeleteRepeatNode.js";
+    script.src = "./code/m19-RegMatching.js";
     document.body.appendChild(script);
 }
 
