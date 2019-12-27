@@ -1,7 +1,7 @@
 /*加载js文件*/
 var excute = function(){
     var script = document.createElement("script");
-    script.src = "./code/m21-RecorderOddEven.js";
+    script.src = "./code/m22-FindKthToTail.js";
     document.body.appendChild(script);
 }
 
