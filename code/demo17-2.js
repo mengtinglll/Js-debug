@@ -41,7 +41,7 @@ function printMaxDigits(n) {
 
     let arr = new Array(n).fill(0);
     while (!increase(arr)) {
-        let printArr =  PrintNumber(arr)
+        let printArr =  PrintNumber(arr);
         console.log(printArr);
     }
 }
@@ -57,8 +57,7 @@ function PrintNumber(arr) {
             isBegining = true;
         }
         if (isBegining) {
-            let a = arr.slice(i).join('');
-            return a;
+            return arr.slice(i).join('');
         }
     }
 }
