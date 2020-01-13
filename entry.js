@@ -1,7 +1,7 @@
 /*加载js文件*/
 var excute = function(){
     var script = document.createElement("script");
-    script.src = "./code/test.js";
+    script.src = "./code/m25-合并排序链表.js";
     document.body.appendChild(script);
 }
 
