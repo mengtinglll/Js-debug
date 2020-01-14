@@ -48,19 +48,30 @@ let root = {
         }
     }
 };
-
+// 空二叉树
+let nullRoot = {
+    val:null,
+    left:null,
+    right:null,
+};
+// 只有一个节点的二叉树
+let singleRoot = {
+    val:1,
+    left:null,
+    right:null,
+};
 // 只有左子树, 形状：
-//        10
+//        6
 //       /
 //      5
 //     /
-//    6
+//    4
 let leftTree = {
-    val: 10,
+    val: 6,
     left: {
         val: 5,
         left: {
-            val: 6,
+            val: 4,
             left: null,
             right: null,
         },
@@ -70,17 +81,17 @@ let leftTree = {
 };
 
 // 只有右子树, 形状：
-//        10
+//        6
 //          \
 //          5
 //           \
-//            6
+//            4
 let rightTree = {
-    val: 10,
+    val: 6,
     right: {
         val: 5,
         right: {
-            val: 6,
+            val: 4,
             left: null,
             right: null,
         },
@@ -157,6 +168,67 @@ let BTree = {
         right: null,
     }
 };
+
+// 对称二叉树
+let symmetricalTree = {
+    val: 8,
+    left: {
+        val: 6,
+        left: {
+            val: 5,
+            left: null,
+            right: null,
+        },
+        right:{
+            val:7,
+            left:null,
+            right:null,
+        }
+    },
+    right:{
+        val:6,
+        left:{
+            val:7,
+            left:null,
+            right:null,
+        },
+        right:{
+            val:5,
+            left:null,
+            right:null,
+        }
+    }
+};
+// 特殊的非对称二叉树
+let nonSymmetricalTree = {
+    val:7,
+    left:{
+        val:7,
+        left:{
+            val:7,
+            left:null,
+            right:null,
+        },
+        right:{
+            val:7,
+            left:null,
+            right:null,
+        }
+    },
+    right:{
+        val:7,
+        left:{
+            val:7,
+            left:null,
+            right:null,
+        },
+        right:null,
+    }
+};
 module.exports = {
-    TreeNode, root, searchTree, leftTree, rightTree, ATree, BTree
+    TreeNode,
+    nullRoot,singleRoot,root,
+    searchTree, leftTree, rightTree,
+    ATree, BTree,
+    symmetricalTree,nonSymmetricalTree,
 };
