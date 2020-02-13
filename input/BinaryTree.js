@@ -225,10 +225,32 @@ let nonSymmetricalTree = {
         right:null,
     }
 };
+let test = {
+    val:10,
+    left:{
+        val:5,
+        left:{
+            val:4,
+            left:null,
+            right:null,
+        },
+        right:{
+            val:7,
+            left:null,
+            right:null,
+        }
+    },
+    right:{
+        val:12,
+        left:null,
+        right:null,
+    }
+}
 module.exports = {
     TreeNode,
     nullRoot,singleRoot,root,
     searchTree, leftTree, rightTree,
     ATree, BTree,
     symmetricalTree,nonSymmetricalTree,
+    test
 };
